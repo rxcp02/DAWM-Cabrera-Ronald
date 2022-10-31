@@ -1,0 +1,221 @@
+html {
+	font-family: sans-serif;
+	background: linear-gradient(
+		95deg,
+		rgba(3, 56, 244, 0.71) 0%,
+		rgba(224, 37, 206, 0.79) 93.75%
+	);
+	font-size: calc(10px + 1vw);
+}
+
+.columns {
+	display: flex;
+}
+
+.column {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+}
+
+.article {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	flex-basis: auto;
+}
+
+.article-body {
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+}
+
+.article-content {
+	flex: 1;
+}
+
+.article {
+	background: white;
+	color: #666;
+	margin: 15px;
+	padding: 15px;
+	border-radius: 4%;
+}
+
+div,
+h2,
+p,
+ul,
+table,
+form,
+li,
+figure,
+image {
+	margin: 0;
+	padding: 0;
+}
+
+.userprofile {
+	width: 100%;
+	text-align: center;
+}
+
+.userpic,
+.header-text {
+	display: inline-block;
+	margin: 2px;
+}
+
+.main,
+.other {
+	margin: 0 auto;
+	max-width: 1366px;
+	padding: 20px;
+}
+
+.other {
+	padding-top: 0;
+}
+
+.article-body {
+	padding: 20px;
+}
+
+.article-title {
+	color: #333;
+	font-size: 1.4em;
+	font-weight: bold;
+	font-weight: 700;
+	line-height: 1.2;
+}
+
+.article-content {
+	margin-top: 5px;
+}
+
+.article:hover,
+.article:focus {
+	box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+		0 10px 10px rgba(0, 0, 0, 0.22);
+	color: #444;
+}
+
+.article {
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+ul {
+	list-style: inside;
+	margin-top: 0px;
+}
+
+div.article-body {
+	line-height: 1.6;
+}
+
+table,
+th,
+td {
+	border: 1px solid black;
+}
+
+.table-pl,
+.tb-for-pl {
+	border: 0px;
+}
+
+th,
+td {
+	padding: 10px;
+	text-align: center;
+}
+
+.java-image,
+.c-image,
+.python-image,
+.js-image {
+	height: 50px;
+	width: 50px;
+	padding: 0px;
+	margin: 0px;
+}
+
+.soccer-image,
+.gaming-image,
+.coding-image,
+.lecture-image,
+.volleyball-image,
+.anime-image {
+	height: 100px;
+	width: 100px;
+	padding: 0px;
+	margin: 0px;
+}
+
+.more-info {
+	padding: 3em;
+	height: 0.25em;
+}
+
+.more-info-text {
+	margin: 0;
+}
+
+.profile-small {
+	height: 200px;
+	border-radius: 50%;
+}
+
+.header {
+	padding: 40px;
+	text-align: center;
+	background: #f9f7f7;
+	margin: 30px;
+	font-size: 20px;
+}
+
+.movie,
+.map {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	padding-top: 56.25%;
+}
+
+#video-movie,
+#soyelmapa {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.mi-iframe {
+	width: 100px;
+	height: 50px;
+}
+
+@media screen and (max-width: 800px) {
+	.columns,
+	.column {
+		display: flex;
+	}
+
+	.columns {
+		flex-direction: column;
+	}
+
+	.table-hobbies {
+		display: block;
+		overflow-x: auto;
+	}
+
+	.mi-iframe {
+		width: 200px;
+		height: 150px;
+	}
+}
