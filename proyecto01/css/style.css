@@ -1,11 +1,14 @@
 html {
 	font-family: sans-serif;
 	background: linear-gradient(
-		95deg,
-		rgba(3, 56, 244, 0.71) 0%,
-		rgba(224, 37, 206, 0.79) 93.75%
+		#416788 40%,
+		#C9DAD9 93.75%
 	);
 	font-size: calc(10px + 1vw);
+}
+
+.fa {
+	color: #D9D9D9;
 }
 
 .columns {
