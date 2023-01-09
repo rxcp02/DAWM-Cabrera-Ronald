@@ -1,0 +1,94 @@
+<main class="container-fluid">
+  <div class="row pt-2">
+    <div class="col-12">
+      <mat-toolbar>
+        <button
+          mat-icon-button
+          color="primary"
+          aria-label="menu"
+          (click)="goBack()"
+        >
+          <mat-icon>arrow_back</mat-icon>
+        </button>
+      </mat-toolbar>
+    </div>
+    <div class="col-9">
+      <h1 class="fw-bold mt-4 titlePage">MMO Games</h1>
+    </div>
+    <div id="content" class="col-12">
+      <div class="col-12 d-flex justify-content-center align-items-center">
+        <div class="dropdown">
+          <button
+            class="btn btn-secondary dropdown-toggle"
+            type="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Platform
+          </button>
+          <ul class="dropdown-menu">
+            <li *ngFor="let platform of platforms">
+              <button
+                class="dropdown-item"
+                type="button"
+                (click)="filterByPlatform(platform)"
+              >
+                {{ platform }}
+              </button>
+            </li>
+          </ul>
+        </div>
+        <div class="dropdown">
+          <button
+            class="btn btn-secondary dropdown-toggle"
+            type="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Genre
+          </button>
+          <ul class="dropdown-menu">
+            <li *ngFor="let genre of genres">
+              <button
+                class="dropdown-item"
+                type="button"
+                (click)="filterByGenre(genre)"
+              >
+                {{ genre }}
+              </button>
+            </li>
+          </ul>
+        </div>
+        <button
+          type="button"
+          class="btn btn-primary reset"
+          (click)="resetFilter()"
+        >
+          Reset Filter
+        </button>
+      </div>
+      <div class="row mt-3">
+        <div class="col-6 col-md-2" *ngFor="let game of games">
+          <div class="card border-0">
+            <div class="row g-0">
+              <div class="col-12">
+                <img
+                  src="{{ game.thumbnail }}"
+                  class="img-fluid rounded-start"
+                  alt="{{ game.title }}"
+                />
+              </div>
+              <div class="col-12">
+                <div class="card-body">
+                  <h3 class="card-title fw-bold text-center">
+                    <a routerLink="/game/{{ game.id }}">{{ game.title }}</a>
+                  </h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>

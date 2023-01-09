@@ -1,0 +1,36 @@
+<main class="container-fluid">
+  <div class="row pt-2">
+    <div class="col-12">
+      <mat-toolbar>
+        <button
+          mat-icon-button
+          color="primary"
+          aria-label="menu"
+          (click)="goBack()"
+        >
+          <mat-icon>arrow_back</mat-icon>
+        </button>
+      </mat-toolbar>
+    </div>
+    <div class="col-9">
+      <h1 class="fw-bold mt-4 titlePage">Editor's Choices</h1>
+    </div>
+    <div
+      class="col-12 col-md-4 justify-content-center mx-auto"
+      *ngFor="let game of games"
+    >
+      <div class="card border-0">
+        <img
+          src="{{ game.thumbnail }}"
+          class="rounded mx-auto d-block img-thumbnail border-0 shadow-4-strong"
+          alt="{{ game.title }}"
+        />
+        <div class="card-body">
+          <h5 class="card-title text-center">{{ game.title }}</h5>
+          <p class="fw-bold">Reasons to play:</p>
+          <p class="card-text">{{ game.short_description }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>

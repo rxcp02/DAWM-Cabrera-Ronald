@@ -1,0 +1,52 @@
+mat-toolbar {
+  background-color: white;
+}
+
+mat-toolbar button {
+  background-color: white;
+  border: 0;
+}
+
+hr.solid {
+  border-top: 3px solid #bbb;
+}
+
+button {
+  margin-top: 15%;
+}
+
+.game_container {
+  margin-top: 10%;
+}
+
+.card-title {
+  font-size: 1.3rem;
+  color: black;
+  line-height: normal;
+}
+
+.card img {
+  width: 75%;
+}
+
+.stat {
+  font-size: 1.3rem;
+  color: black;
+  line-height: normal;
+}
+
+.stat-value {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.half {
+  width: 50%;
+  float: left;
+  padding: 20px 15px;
+}
+
+.divisor {
+  border-right: 1px solid #652e48;
+}

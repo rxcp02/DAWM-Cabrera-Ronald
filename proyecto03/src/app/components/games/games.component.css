@@ -1,0 +1,27 @@
+#content {
+  height: 70vh;
+  width: 100vw;
+}
+
+h1 {
+  color: #652e48;
+  font-size: 1.8rem;
+}
+
+mat-toolbar button {
+  background-color: white;
+  border: 0;
+}
+
+.card-body {
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.dropdown,
+.reset {
+  margin: 5px;
+}

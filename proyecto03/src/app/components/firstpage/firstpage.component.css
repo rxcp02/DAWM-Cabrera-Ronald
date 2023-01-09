@@ -1,0 +1,26 @@
+main {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100vh;
+  width: 100vw;
+}
+
+h1 {
+  color: #652e48;
+  font-size: 1.8rem;
+}
+
+.container {
+  height: 100%;
+}
+
+.imgf {
+  height: 80%;
+  width: 80%;
+  margin: 10%;
+}
+
+.btn {
+  margin: 2%;
+}

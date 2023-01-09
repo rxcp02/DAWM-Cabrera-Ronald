@@ -1,0 +1,39 @@
+<div class="container d-flex align-items-center justify-content-center">
+  <div class="col">
+    <div class="row">
+      <div class="col text-center">
+        <h1 class="fw-bold mt-4 titlePage">MMO GAMES</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col text-center">
+        <img
+          src="{{ game.thumbnail }}"
+          class="imgf rounded mx-auto d-block img-thumbnail border-0 shadow-4-strong"
+          alt="{{ game.title }}"
+        />
+      </div>
+    </div>
+    <div class="row">
+      <div class="col text-center">
+        <button type="button" class="btn btn-primary" routerLink="/games">
+          View Games
+        </button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col text-center">
+        <button type="button" class="btn btn-primary" (click)="goToRandom()">
+          Get Random Game
+        </button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col text-center">
+        <button type="button" class="btn btn-primary" routerLink="/editor">
+          Editor's Choices
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
